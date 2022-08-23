@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headTag}}
+</head>
+<body>
+    {{!-- //using partials --}}
+    {{>navbar}}
+    {{>main}}
+    {{>footer}}
+    <script>
+        const abcd = document.getElementById("abcd");
+        abcd.addEventListener("click", ()=>{
+            location.href = "/weather";
+        })
+    </script>
+</body>
+</html>

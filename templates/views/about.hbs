@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>headTag}}
+</head>
+<body>
+  {{>navbar}}
+    <div class="about-main">
+      <figure>
+        <img src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&ga=GA1.2.44079261.1661245244" alt="user-img">
+      </figure>
+      <div class="about-me">
+        <h4>Wecome to weather app</h4>
+        <h2>I am a <span>mern stack developer</span> looking for opportunities</h2>
+        <button id="aboutMe" type="button" class="buttons">About Me</button>
+      </div>
+    </div>
+  {{>footer}}
+    <script>
+      const aboutMe = document.getElementById("aboutMe");
+      aboutMe.addEventListener("click", ()=>{
+        location.href = "/aboutMe"
+      })
+    </script>
+</body>
+</html>
