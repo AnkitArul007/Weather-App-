@@ -10,9 +10,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 //paths
-const partials_path = path.join(__dirname, "../templates/partials")
-const templatePath = path.join(__dirname, "../templates/views");
-console.log(partials_path)
+const partials_path = path.join(__dirname, "/templates/partials")
+const templatePath = path.join(__dirname, "/templates/views");
+
 
 
 
@@ -23,7 +23,7 @@ app.set("views", templatePath);
 hbs.registerPartials(partials_path);
 
 //using middlewares::
-const static_path = path.join(__dirname, "../public");
+const static_path = path.join(__dirname, "/public");
 app.use(express.static(static_path));
 
 //rendering/routing our web-pages::
