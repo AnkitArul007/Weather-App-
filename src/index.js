@@ -27,7 +27,7 @@ const static_path = path.join(__dirname, "../public");
 app.use(express.static(static_path));
 
 //rendering/routing our web-pages::
-app.get("", (req, res)=>{
+app.get("/", (req, res)=>{
     res.render("index");
 })
 
