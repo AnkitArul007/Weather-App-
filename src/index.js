@@ -51,4 +51,6 @@ app.get("*", (req, res)=>{
 app.listen(port, (err)=>{
     if (err) throw err;
     console.log(`listening to port ${port}`);
-})
+});
+
+module.exports = app;
