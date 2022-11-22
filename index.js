@@ -25,6 +25,7 @@ hbs.registerPartials(partials_path);
 //using middlewares::
 const static_path = path.join(__dirname, "/public");
 app.use(express.static(static_path));
+console.log(static_path);
 
 //rendering/routing our web-pages::
 app.get("/", (req, res)=>{
